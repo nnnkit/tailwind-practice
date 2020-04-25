@@ -53,15 +53,17 @@ let destinations: IDestination[] = [
 ];
 const Destinations = () => {
   return (
-    <div className="p-8 bg-gray-200">
+    <div className="p-8 bg-gray-200 mx-w-xl">
       <h3 className="text-2xl font-medium">Popular destinations</h3>
       <p className="pt-2 pb-4 text-xl text-gray-700">
         A selection of great work-friendly places in the world. With lots of
         activities and places around.
       </p>
-      {destinations.map((destination) => (
-        <Destination {...destination} />
-      ))}
+      <div className="lg:grid lg:grid-cols-2 lg:gap-3">
+        {destinations.map((destination) => (
+          <Destination {...destination} />
+        ))}
+      </div>
     </div>
   );
 };

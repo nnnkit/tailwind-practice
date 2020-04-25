@@ -3,11 +3,11 @@ import { IDestination } from "./Destinations";
 
 const Destination = (props: IDestination) => {
   return (
-    <div className="flex shadow-lg rounded-lg bg-white mb-10">
+    <div className="flex shadow-lg rounded-lg overflow-hidden bg-white mb-10">
       <img
         src="/img/chicago.jpg"
         alt={props.imageAlt}
-        className="rounded-lg w-1/3"
+        className="w-1/3 lg:h-48 object-cover object-center"
       />
       <div className="p-6 w-2/3">
         <h4 className="font-semibold text-2xl">{props.city}</h4>
