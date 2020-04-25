@@ -3,14 +3,14 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-300">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
       </Head>
       <main className="">
-        <div className="flex">
+        <div className="flex bg-gray-100">
           <div className="p-8 p-12 mx-w-xl sm:max-w-4xl lg:w-1/2 lg:max-w-full lg:py-24 lg:px-12">
             <div className="xl:max-w-lg xl:ml-auto">
               <img
@@ -25,7 +25,7 @@ export default function Home() {
                 alt=""
               />
 
-              <h1 className="mt-6 text-2xl font-bold text-gray-900 leading-tight sm:text-4xl sm:mt-8 lg:text-3xl xl:text-4xl">
+              <h1 className="mt-6 text-3xl font-bold text-gray-900 leading-tight sm:text-4xl sm:mt-8 lg:text-3xl xl:text-4xl">
                 You can work from anywhere. <br className="hidden lg:inline" />
                 <span className="text-indigo-500 font-bold">
                   Take advantage of it.
@@ -37,11 +37,11 @@ export default function Home() {
                 not on vacation.
               </p>
               <div>
-                <a
-                  href="#"
-                  className="inline-block bg-indigo-600 text-white px-5 py-3  text-sm rounded-lg mt-4 shadow-lg uppercase tracking-wider font-semibold sm:mt-6 sm:text-base"
-                >
+                <a href="#" className="btn btn-indigo md:text-base shadow-lg">
                   Book your escape
+                </a>
+                <a href="#" className="ml-2 btn btn-gray md:text-base">
+                  Learn more
                 </a>
               </div>
             </div>
